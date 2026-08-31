@@ -38,11 +38,11 @@ Users should be able to:
 
 #### Desktop view
 
-![Desktop view of the Weather app](./src/assets/images/desktop%20view.png)
+![Desktop view of the Weather app](./weather-app/src/assets/images/desktop-view.png)
 
 #### Mobile view
 
-![Mobile view of the Weather app](./src/assets/images/mobile%20view.png)
+![Mobile view of the Weather app](./weather-app/src/assets/images/mobile-view.png)
 
 ### 🔗 Links
 
