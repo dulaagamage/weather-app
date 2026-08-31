@@ -1,116 +1,114 @@
-# Frontend Mentor - Weather app
+# Weather app challenge by Frontend Mentor
 
-![Design preview for the Weather app coding challenge](./preview.jpg)
+This is a solution to the [Weather app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/weather-app-K1FhddVm49).
 
-## Welcome! 👋
+## 📑 Table of contents
 
-Thanks for checking out this coding challenge.
+- [Overview](#-overview)
+  - [The challenge](#-the-challenge)
+  - [Screenshots](#-screenshots)
+  - [Links](#-links)
+- [My process](#️-my-process)
+  - [Built with](#-built-with)
+  - [What I learned](#-what-i-learned)
+  - [Continued development](#-continued-development)
+  - [Useful resources](#-useful-resources)
+  - [AI collaboration](#-ai-collaboration)
+- [Author](#-author)
+- [Acknowledgments](#-acknowledgments)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## 🔍 Overview
 
-**To do this challenge, you need a good understanding of HTML, CSS, and JavaScript.**
+### 🎯 The challenge
 
-## The challenge
+Users should be able to:
 
-Build a weather app using the [Open-Meteo API](https://open-meteo.com/) and get it looking as close to the design as possible.
+- Search for weather information by entering a location
+- View the current temperature, weather condition, date, and location
+- View feels-like temperature, humidity, wind speed, and precipitation
+- Browse a seven-day forecast with daily high and low temperatures
+- View an hourly forecast for the selected day
+- Switch between days in the hourly forecast
+- Toggle between metric and imperial measurement units
+- View loading, empty-search, and API error states
+- Use the application across mobile and desktop screen sizes
+- See hover and focus states for interactive elements
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+### 📸 Screenshots
 
-Your users should be able to:
+#### Desktop view
 
-- Search for weather information by entering a location in the search bar
-- View current weather conditions including temperature, weather icon, and location details
-- See additional weather metrics like "feels like" temperature, humidity percentage, wind speed, and precipitation amounts
-- Browse a 7-day weather forecast with daily high/low temperatures and weather icons
-- View an hourly forecast showing temperature changes throughout the day
-- Switch between different days of the week using the day selector in the hourly forecast section
-- Toggle between Imperial and Metric measurement units via the units dropdown
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
+![Desktop view of the Weather app](./src/assets/images/desktop%20view.png)
 
-## Getting started
+#### Mobile view
 
-### What's included
+![Mobile view of the Weather app](./src/assets/images/mobile%20view.png)
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design.
+### 🔗 Links
 
-**In your download:**
-- Mobile and desktop designs (JPG format)
-- All required assets in the `/assets` folder
-- Variable and static font files (or link to Google Fonts)
-- `style-guide.md` with colors, fonts, and other design specs
+- Solution URL: [Add GitHub repository URL](https://github.com/dulaagamage/weather-app)
+- Live Site URL: Add deployed site URL
 
-**Want more accurate builds?** The designs are in JPG static format, which means you'll need to use your best judgment for styles such as `font-size`, `padding`, and `margin`. If you'd like the Figma design file to help build a more accurate solution faster, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+## ⚙️ My process
 
-### API setup
+### 🛠 Built with
 
-This project uses the [Open-Meteo API](https://open-meteo.com/) to fetch weather data.
+- Semantic HTML5 markup
+- React 19
+- Vite 8
+- Tailwind CSS 4
+- JavaScript modules
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- Open-Meteo Forecast API
+- Open-Meteo Geocoding API
+- Local variable fonts
 
-**Good news:** Open-Meteo is completely free and doesn't require an API key! You can start making requests right away.
+### 📚 What I learned
 
-- **API Documentation:** [https://open-meteo.com/en/docs](https://open-meteo.com/en/docs)
-- **No rate limits** for reasonable personal use
-- Example endpoint: `https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current_weather=true`
+During this challenge, I improved my understanding of:
 
-Check their documentation for all available weather parameters and location search capabilities.
+- Managing related application states with React hooks
+- Fetching current, daily, and hourly weather data from an external API
+- Searching for locations with a separate geocoding endpoint
+- Using `AbortController` to cancel outdated forecast requests
+- Handling loading, empty, success, and failure states
+- Transforming API response arrays into reusable forecast components
+- Sharing selected location, unit, and forecast-day state between components
+- Mapping weather codes to accessible descriptions and local icons
+- Creating responsive layouts with Tailwind CSS utilities
+- Separating components, API services, and utility functions for maintainability
 
-## Using AI coding assistants
+### 🚀 Continued development
 
-We've included two files to help you if you're using AI coding assistants (like Claude, GitHub Copilot, Cursor, etc.) while working on this challenge:
+In future improvements, I plan to:
 
-- `AGENTS.md` - Contains detailed instructions for AI assistants on how to help you with this challenge. It's tailored to this challenge's difficulty level, so the AI will provide guidance appropriate to your learning stage—offering more support for beginner challenges and encouraging more independence on advanced ones.
-- `CLAUDE.md` - A pointer file that directs Claude-based tools to the AGENTS.md instructions.
+- Add a retry button to the API error state
+- Save the selected measurement system between visits
+- Improve keyboard navigation and focus management in popup controls
+- Add automated component and API-layer tests
+- Perform more accessibility testing with keyboard and screen-reader tools
+- Refine the layout through visual comparison at additional screen sizes
 
-**How to use them:** You don't need to do anything! These files are automatically detected by most AI coding tools. The AI will read them and adjust its behavior to be a better learning partner—guiding you toward solutions rather than just giving you the answers.
+### 🔎 Useful resources
 
-**Note:** These files are designed to help you *learn*, not to do the work for you. The AI is instructed to ask questions, give hints, and explain concepts rather than writing complete solutions.
+- [Open-Meteo documentation](https://open-meteo.com/en/docs) - Helped identify the current, hourly, daily, and unit parameters required by the application
+- [Open-Meteo Geocoding API](https://open-meteo.com/en/docs/geocoding-api) - Provided location-search results and coordinates for forecast requests
+- [React documentation](https://react.dev/learn) - Helped with components, state, effects, and rendering patterns
+- [Tailwind CSS documentation](https://tailwindcss.com/docs) - Helped create responsive layouts and interactive states with utility classes
+- [MDN Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) - Provided guidance on asynchronous requests and request cancellation
 
-## Building your project
+### 🤖 AI collaboration
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+AI assistance was used primarily for debugging and improving error handling. It helped identify implementation issues, interpret error messages, and review how the application responds to failed API requests and unexpected states. Suggestions were reviewed and tested before being incorporated into the project.
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+## 👩‍💻 Author
 
-### Want some support on the challenge?
+- Frontend Mentor - [@dulaagamage](https://www.frontendmentor.io/profile/dulaagamage)
+- GitHub - [@dulaagamage](https://github.com/dulaagamage)
+- LinkedIn - [Dulanjalee Gamage](https://www.linkedin.com/in/dulanjalee-gamage-01a7aa207/)
 
-[Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+## 🙏 Acknowledgments
 
-## Deploying your project
-
-As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
-
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
-
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://www.frontendmentor.io/guides/hosting-your-solution).
-
-## Submitting your solution
-
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://www.frontendmentor.io/guides/how-to-submit-solutions) for tips on how to do this.
-
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
-
-**We strongly recommend overwriting this `README.md` with a custom one.** We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code. The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings.
-
-## Sharing your solution
-
-There are multiple places you can share your solution:
-
-1. Submit it on the platform and share your solution page in the **#finished-projects** channel of our [community](https://www.frontendmentor.io/community)
-2. Share on [X (formerly Twitter)](https://x.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in your post. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on [LinkedIn](https://www.linkedin.com/company/frontend-mentor/).
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-**This challenge is completely free. Please share it with anyone who will find it useful for practice.**
-
-**Have fun building!** 🚀
+Thanks to the Frontend Mentor community for providing the challenge, feedback, and inspiration. Weather and geocoding data are provided by [Open-Meteo](https://open-meteo.com/). 🚀
